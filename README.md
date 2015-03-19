@@ -38,5 +38,8 @@ GitBook 非常简单，新建一个 book 就可以进入第三个步骤了。
 3. 想一个炫酷的库名，我用 name 做示范。
 ![](建库2:2015-03-19 下午4.50.38.png)
 点击 Creat repository 你就得到了一个你命名的库。
-4.用 GitHub 登陆 GitBook ， 
 
+4. 用 GitHub 登陆 GitBook 。
+5. 新建一个 book ，右上方的＋号或＋Creat a new book 。![](建book1:  2015-03-19 下午4.09.16.png)
+6. 想一个炫酷的名字，我用关联的库相同的名字 name 。![](建book2 2015-03-19 下午4.56.47.png) 点击 Creat book 你得到了一个你命名的 book 。
+7. 
