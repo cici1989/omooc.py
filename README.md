@@ -34,7 +34,7 @@ GitBook 非常简单，新建一个 book 就可以进入第三个步骤了。
 沿着这个思路，当你还是会遇到没有办法解决的问题时，那通常已经是一个非常细节的问题，任何一个过来人都能明白你的问题出在哪里并帮你指出来，而不是同样一头雾水，无法帮助你。
 ## 具体步骤
 1. 注册并登陆 [GitHub](https://github.com) 。 
-2. 新建一个库，右上方的＋号下拉，点击 New repository。 ＃ ![](建book2 2015-03-19 下午4.56.47.png)   取一个炫酷的库名，我用 name 做示范。点击 Create repository 你就得到了一个你命名的库。  ＃  
+2. 新建一个库，右上方的＋号下拉，点击 New repository。 ＃ ![](建库1/2015-03-19 下午4.49.31png)   取一个炫酷的库名，我用 name 做示范。点击 Create repository 你就得到了一个你命名的库。  ＃  
 3. 用 GitHub 登陆 GitBook 。
 4. 验证邮箱。右上角下拉，点击 Accout Setting 。# 输入邮箱和自己设定的密码，点击左下角 Save 。# 验证过邮箱中 GitBook 发送的邮件后，会得到如图    'This email is verified.'的信息。
 5. 新建一个 book ，右上方的＋号或＋Creat a new book 。 ＃    取一个炫酷的名字，我用的是和待关联库相同的名字 name 。  ![](建book2 2015-03-19 下午4.56.47.png)    点击 Create book 你得到了一个你命名的 book 。
