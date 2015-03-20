@@ -57,7 +57,10 @@ GitBook 非常简单，新建一个 book 就可以进入第三个步骤了。
 
 
 
-### 5.新建一个 book ，右上方的＋号或＋Creat a new book 。 ![](http://img1.ph.126.net/YR01nW8cRDrMTN25PDNmQg==/646829496499017793.jpg)    取一个炫酷的名字，我用的是和待关联库相同的名字 name 。  ![](http://img2.ph.126.net/5YL3UsKNC9fcCbBYMRJW8g==/6599273187960174962.jpg)    
+### 5.新建一个 book ，右上方的＋号或＋Creat a new book 。 ![](http://img1.ph.126.net/YR01nW8cRDrMTN25PDNmQg==/646829496499017793.jpg)    
+
+
+####取一个炫酷的名字，我用的是和待关联库相同的名字 name 。  ![](http://img2.ph.126.net/5YL3UsKNC9fcCbBYMRJW8g==/6599273187960174962.jpg)    
 
 点击 Create book 你得到了一个你命名的 book 。
 
