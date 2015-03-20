@@ -33,8 +33,8 @@ GitBook 非常简单，新建一个 book 就可以进入第三个步骤了。
 
 沿着这个思路，当你还是会遇到没有办法解决的问题时，那通常已经是一个非常细节的问题，任何一个过来人都能明白你的问题出在哪里并帮你指出来，而不是同样一头雾水，无法帮助你。
 ## 具体步骤
-1. 注册并登陆 [GitHub](https://github.com) 。 
-2. 新建一个库，右上方的＋号下拉，点击 New repository。  ![](http://img1.ph.126.net/4AGpUv1W8KddYm52Gcyjzw==/6630391566047723290.jpg) 
+### 1. 注册并登陆 [GitHub](https://github.com) 。 
+### 2. 新建一个库，右上方的＋号下拉，点击 New repository。  ![](http://img1.ph.126.net/4AGpUv1W8KddYm52Gcyjzw==/6630391566047723290.jpg) 
 
 
 取一个炫酷的库名，我用 name 做示范。![](http://img2.ph.126.net/pfmPEdOI6m6Leb4_ejbD0g==/2452772947074564263.jpg)
@@ -42,32 +42,32 @@ GitBook 非常简单，新建一个 book 就可以进入第三个步骤了。
 点击 Create repository 你就得到了一个你命名的库。  ![](http://img1.ph.126.net/IeTAhgj-Nq2eMJoooTq3Xw==/3360811222027360864.jpg)  
 
 
-3. 用 GitHub 登陆 GitBook 。
+### 3. 用 GitHub 登陆 GitBook 。
 
 
-4. 验证邮箱。右上角下拉，点击 Accout Setting 。
+### 4. 验证邮箱。右上角下拉，点击 Accout Setting 。
 
 
 ![](http://img0.ph.126.net/3jdkOyxGOI8Md8o2nkTiFw==/661747670264676873.png)  
 
 
-输入邮箱和自己设定的密码，点击左下角 Save 。
+输入邮箱和自己设定的密码，点击左下角 Save 。验证过邮箱中 GitBook 发送的邮件后，会得到'This email is verified.'的信息。
 
 ![](http://img0.ph.126.net/TH0h8NSpqT5JqQJBNvMb8g==/6599272088448547215.jpg)
 
-验证过邮箱中 GitBook 发送的邮件后，会得到'This email is verified.'的信息。
 
-5. 新建一个 book ，右上方的＋号或＋Creat a new book 。 ![](http://img1.ph.126.net/YR01nW8cRDrMTN25PDNmQg==/646829496499017793.jpg)    取一个炫酷的名字，我用的是和待关联库相同的名字 name 。  ![](http://img2.ph.126.net/5YL3UsKNC9fcCbBYMRJW8g==/6599273187960174962.jpg)    
+
+### 5.新建一个 book ，右上方的＋号或＋Creat a new book 。 ![](http://img1.ph.126.net/YR01nW8cRDrMTN25PDNmQg==/646829496499017793.jpg)    取一个炫酷的名字，我用的是和待关联库相同的名字 name 。  ![](http://img2.ph.126.net/5YL3UsKNC9fcCbBYMRJW8g==/6599273187960174962.jpg)    
 
 点击 Create book 你得到了一个你命名的 book 。
 
 
-6. 关联刚刚新建的库，点击 Link to GitHub 。![](http://img1.ph.126.net/ovoXWu-grJy11mOXZocqXg==/6619368961979988001.jpg) 
+### 6.关联刚刚新建的库，点击 Link to GitHub 。![](http://img1.ph.126.net/ovoXWu-grJy11mOXZocqXg==/6619368961979988001.jpg) 
 
 输入 ‘你的 GitHub 账户名／库名’，点击右下角 Save 。![](http://img2.ph.126.net/cyyogF0Jn6vMc2mjPF8nNg==/3096787693788560714.jpg) 
 
 会得到如图 ' Book configuration has been updated!'信息。
 ![](http://img2.ph.126.net/hL3gZV_-n2pUqlcqu02bqA==/6608237506261334228.jpg)
-7. 
+### 
 ?????????
-7. 点击 Edit 开始写你的 book 吧。保存并你打开 GitHub 中的库，会发现你所编辑的内容已经同步到 README.md 中了。
+### 7.点击 Edit 开始写你的 book 吧。保存并你打开 GitHub 中的库，会发现你所编辑的内容已经同步到 README.md 中了。
