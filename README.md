@@ -71,6 +71,5 @@ GitBook 非常简单，新建一个 book 就可以进入第三个步骤了。
 
 **会得到如图 ' Book configuration has been updated!'信息。**
 ![](http://img2.ph.126.net/hL3gZV_-n2pUqlcqu02bqA==/6608237506261334228.jpg)
-### 
-?????????
+### ?????????
 ### 7.点击 Edit 开始写你的 book 吧。保存并你打开 GitHub 中的库，会发现你所编辑的内容已经同步到 README.md 中了。
