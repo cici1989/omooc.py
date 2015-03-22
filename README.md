@@ -38,9 +38,15 @@ GitBook 非常简单，新建一个 book 就可以进入第三个步骤了。
 
 
 ** 取一个炫酷的库名，我用 name做示范。 **
+
+
 ![](http://img2.ph.126.net/pfmPEdOI6m6Leb4_ejbD0g==/2452772947074564263.jpg)
 
-** 点击 Create repository 你就得到了一个你命名的库。 ** ![](http://img1.ph.126.net/IeTAhgj-Nq2eMJoooTq3Xw==/3360811222027360864.jpg)  
+
+** 点击 Create repository 你就得到了一个你命名的库。 **
+
+
+![](http://img1.ph.126.net/IeTAhgj-Nq2eMJoooTq3Xw==/3360811222027360864.jpg)  
 
 
 ### 3. 用 GitHub 登陆 GitBook 。
@@ -54,6 +60,7 @@ GitBook 非常简单，新建一个 book 就可以进入第三个步骤了。
 
 ** 输入邮箱和自己设定的密码，点击左下角 Save 。验证过邮箱中 GitBook 发送的邮件后，会得到'This email is verified.'的信息。 **
 
+
 ![](http://img0.ph.126.net/TH0h8NSpqT5JqQJBNvMb8g==/6599272088448547215.jpg)
 
 
@@ -63,7 +70,9 @@ GitBook 非常简单，新建一个 book 就可以进入第三个步骤了。
 
 ** 取一个炫酷的名字，我用的是和待关联库相同的名字name 。 **
 
-![](http://img2.ph.126.net/5YL3UsKNC9fcCbBYMRJW8g==/6599273187960174962.jpg)    
+
+![](http://img2.ph.126.net/5YL3UsKNC9fcCbBYMRJW8g==/6599273187960174962.jpg) 
+
 
 ** 点击 Create book 你得到了一个你命名的 book 。 **
 
@@ -72,9 +81,12 @@ GitBook 非常简单，新建一个 book 就可以进入第三个步骤了。
 
 ![](http://img1.ph.126.net/ovoXWu-grJy11mOXZocqXg==/6619368961979988001.jpg) 
 
+
 ** 输入 ‘你的 GitHub 账户名／库名’，点击右下角 Save。 **
 
+
 ![](http://img2.ph.126.net/cyyogF0Jn6vMc2mjPF8nNg==/3096787693788560714.jpg) 
+
 
 ** 会得到如图 ' Book configuration has been updated!'信息。 **
 
