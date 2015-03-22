@@ -1,3 +1,5 @@
+# 写给六个月前的自己——Markdown
+
 >##学习任何东西前，我觉得都需要用阳志平老师的元学习技巧开个光。
 
 ##元学习技巧：
@@ -16,7 +18,7 @@
 
 >###我希望你看过这个元技巧后，直接关掉我的教程，先自己尝试运用工具包中的一切。
 
-# 写给六个月前的自己——Markdown
+
 >####Markdown 的语法并不复杂，可以在 [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) 或  [献给写作者的 Markdown 新手指南](http://www.jianshu.com/p/q81RER) 学习。
 
 >####我下面主要列出一些我学习过程中遇到并解决的问题。
