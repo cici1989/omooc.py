@@ -5,7 +5,7 @@
 
 import simplegui
 import random
-#import math
+import math
 
 global num_guess , num_secret , num_remain , num_range1 ,num_range2
 
@@ -52,14 +52,14 @@ def range1000():
 def input_guess(guess):
     # main game logic goes here	
     global num_guess , num_remain , num_range1 ,num_range2
-    if guess != int:
-       print "Invalid literal"
-    else:
-       num_guess = int(guess)
-       print "Guess was" , guess
-       num_remain -=1 
-       print "Number of remaining guesses is", num_remain
-       if num_remain >= 0:
+   # if int(guess):
+   #    print "Invalid literal"
+   # else:
+    num_guess = int(guess)
+    print "Guess was" , guess
+    num_remain -=1 
+    print "Number of remaining guesses is", num_remain
+    if num_remain >= 0:
             if num_guess == num_secret:
                 print "Correct"
             elif num_range1 < num_guess < num_secret:
@@ -70,7 +70,7 @@ def input_guess(guess):
                 num_range2 = num_guess
             else:     
                 print "Invalid number!"     
-       else:
+    else:
             print "Game over!"
     return num_remain
     return num_guess
