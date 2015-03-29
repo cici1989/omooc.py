@@ -165,13 +165,6 @@ GitBook 非常简单，新建一个 book 就可以进入第三个步骤了。
     + 则对应的仓库应该是:
     + `https://git.gitbook.com/[帐号]/[图书名].git`
 
-技巧:
-
-- 和 svn/hg 等等版本管理仓库类似
-- git 仓库也支持在配置中明文保存口令,以免反复输入
-- 形如:
-    + `url = https://用户名:口令@git.gitbook.com/帐号/[图书名].git`
-
 
 ### 操作上
 
@@ -204,29 +197,19 @@ GitBook 非常简单，新建一个 book 就可以进入第三个步骤了。
 
 ```
 $ git remote -v
-book    https://git.gitbook.com/[帐号]/[图书名].git (push)
-book    https://git.gitbook.com/[帐号]/[图书名].git (fetch)
-hub git@github.com:OpenMindClub/[图书名].git (push)
-hub git@github.com:OpenMindClub/[图书名].git (fetch)
-origin  git@github.com:OpenMindClub/[图书名].git (push)
+book    https://git.gitbook.com/[gitbook帐号]/[图书名].git (push)
+book    https://git.gitbook.com/[gitbook帐号]/[图书名].git (fetch)
+hub git@github.com:[github账号]/[图书名].git (push)
+hub git@github.com:[github账号]/[图书名].git (fetch)
+origin  git@github.com:[github账号]/[图书名].git (push)
+origin  git@github.com:[github账号]/[图书名].git (fetch)
 ```
 
-
-- 配置明文口令,以便不用输入
-
-```
-[remote "book"]
-    url = https://[用户名]:[口令]@git.gitbook.com/[帐号]/[图书名].git
-    fetch = +refs/heads/*:refs/remotes/origin/*
-```
-
-
-- `注意:` 隐藏约定 ~ `口令中不能包含 @` ,否则,你懂的...
 
 
 #### 手工双推
 
-那么,俺就可以用两次 git 操作,完成两个仓库的内容发送了:
+用两次 git 操作,完成两个仓库的内容发送:
 
 ```
 $ git pu hub
