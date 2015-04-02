@@ -51,6 +51,7 @@ def click_green():
 # define event handler for mouse click, draw
 def click(pos):
     global draw_pos , draw_shape , draw_radius , draw_color , order , review_list , timer
+    #防止在回放时点击画布输入图案，扰乱回放过程。
     if timer.is_running():
         return
     x = pos[0]
