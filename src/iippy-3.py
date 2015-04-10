@@ -1,9 +1,9 @@
 # template for "Guess the number" mini-project
 # input will come from buttons and an input field
 # all output for the game will be printed in the console
-# 遇到第一个问题，回放不是一步一步的。
+# 遇到第一个问题，回放不是一步一步的——已解决。
 # 遇到第二个问题，不会同时添加多个 timer，
-# 思路是 ai 猜数字回放、手动猜数字过程回放、ai 自动猜数字各一个timer。
+## 思路是 ai 猜数字回放、手动猜数字过程回放、ai 自动猜数字各一个timer。
 
 import simplegui
 import random
