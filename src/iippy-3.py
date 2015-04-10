@@ -112,13 +112,18 @@ def count():
     print u'ai一共猜了', len(list2),'次\n'
 
 def VS():
-    print u'ai一共猜了', len(list2),u'次,你一共猜了',len(list1),u'次。'
-    if len(list1) > len (list2):
-        print u'ai 赢了。'
-    elif len(list1) < len (list2):
-        print u'你赢了。'
-    else:
-        print u'平局。'
+    if len(list2)==0:
+        print u"ai还没有进行游戏。"
+    if len(list1)==0:
+        print u'你还没有进行游戏。'
+    else:    
+        print u'ai一共猜了', len(list2),u'次,你一共猜了',len(list1),u'次。'
+        if len(list1) > len (list2):
+            print u'ai 赢了。'
+        elif len(list1) < len (list2):
+            print u'你赢了。'
+        else:
+            print u'平局。'
     
 def timer():
     global num_guess , num_secret , num_remain , num_range1 ,num_range2 , list_num
