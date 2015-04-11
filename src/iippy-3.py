@@ -4,19 +4,19 @@
 # 遇到第一个问题，回放不是一步一步的——已解决。
 # 遇到第二个问题，不会同时添加多个 timer，
 ## 思路是 ai 猜数字回放、手动猜数字过程回放、ai 自动猜数字各一个timer。
-
-# 可以添加 ai1、ai2...进行不同策略 ai 之间的对战，
+        
+# 可以添加 ai1、ai2...进行不同策略之间的对战。
 ## 只要在获取 num_guess 的时候分别用不同策略对应的公式,
 ## 并创建一个对应的 list 就可以。
-
 
 import simplegui
 import random
 import math
 
 # initialize global variables used in your code here  
-global num_guess , num_secret , num_remain  ,num_range2 ,num_auto 
+global num_guess , num_secret , num_auto 
 num_range1 = 0 
+num_range2 = 100
 list1 = []
 list2 = []
 list_num = 0
@@ -35,7 +35,7 @@ def num_range1(n):
     
 def num_range2(n):
     global num_range1 , num_range2 ,num_guess , num_secret , num_remain , list_num
-    num_range2 = int(n)  
+    num_range2 = int(n) 
     num_secret = random.randint(num_range1, num_range2) 
     print u"请在",num_range1,u"到",num_range2,"之间猜。\n"
     
@@ -45,15 +45,25 @@ def input_guess(guess):
     if num_guess == num_secret:
                 print u"您猜的数字是",guess,"，猜对了！\n"
                 list1.append(u"您猜的数字是"+guess+"，猜对了！\n")
+    elif num_guess == num_range1:
+                print u"您猜的数字是",guess,"，猜小了！\n"
+                list1.append(u"您猜的数字是"+guess+"，猜小了！\n")
+                num_range1 += 1
+                print u"请在",num_range1,u"到",num_range2,"之间继续猜。\n"
+    elif num_guess == num_range2:
+                print u"您猜的数字是",guess,"，猜大了！\n"
+                list1.append(u"您猜的数字是"+guess+"，猜大了！\n")
+                num_range2 -= 1
+                print u"请在",num_range1,u"到",num_range2,"之间继续猜。\n"
     elif num_range1 < num_guess < num_secret:
                 print u"您猜的数字是",guess,"，猜小了！\n"
                 list1.append(u"您猜的数字是"+guess+"，猜小了！\n")
-                num_range1 = num_guess
+                num_range1 = num_guess + 1
                 print u"请在",num_range1,u"到",num_range2,"之间继续猜。\n"
     elif num_secret < num_guess < num_range2:
                 print u"您猜的数字是",guess,"，猜大了！\n"
                 list1.append(u"您猜的数字是"+guess+"，猜大了！\n")
-                num_range2 = num_guess
+                num_range2 = num_guess - 1
                 print u"请在",num_range1,u"到",num_range2,"之间继续猜。\n"
     elif num_guess < num_range1 or num_guess > num_range2:     
                 print u"您猜的数字是",guess,"，超出区间！\n"
@@ -70,22 +80,35 @@ def auto():
     else:
         print "ai全自动猜数字：\n"
         timer.start() 
-       
+        
+# 可以添加 ai1、ai2...不同的策略对战。
+
 def auto_step():    
     global num_guess , num_secret , num_remain , num_range1 ,num_range2 , list_num
+    #num_guess = num_range2
     num_guess = (num_range1 + num_range2)/2
     if num_guess == num_secret:
                 print u"ai猜的数字是",num_guess,"，猜对了！\n"
                 list2.append(u"ai猜的数字是"+str(num_guess)+"，猜对了！\n")
+    elif num_guess == num_range1:
+                print u"您猜的数字是",str(num_guess),"，猜小了！\n"
+                list1.append(u"您猜的数字是"+str(num_guess)+"，猜小了！\n")
+                num_range1 += 1
+                print u"请在",num_range1,u"到",num_range2,"之间继续猜。\n"
+    elif num_guess == num_range2:
+                print u"您猜的数字是",str(num_guess),"，猜大了！\n"
+                list1.append(u"您猜的数字是"+str(num_guess)+"，猜大了！\n")
+                num_range2 -= 1
+                print u"请在",num_range1,u"到",num_range2,"之间继续猜。\n"            
     elif num_range1 < num_guess < num_secret:
                 print u"ai猜的数字是",num_guess,"，猜小了！\n"
                 list2.append(u"ai猜的数字是"+str(num_guess)+"，猜小了！\n")
-                num_range1 = num_guess
+                num_range1 = num_guess + 1
                 print u"请在",num_range1,u"到",num_range2,"之间继续猜。\n"
     elif num_secret < num_guess < num_range2:
                 print u"ai猜的数字是",num_guess,"，猜大了！\n"
                 list2.append(u"ai猜的数字是"+str(num_guess)+"，猜大了！\n")
-                num_range2 = num_guess
+                num_range2 = num_guess - 1
                 print u"请在",num_range1,u"到",num_range2,"之间继续猜。\n"
     elif num_guess < num_range1 or num_guess > num_range2:     
                 print u"ai猜的数字是",num_guess,"，超出区间！\n"
@@ -131,20 +154,32 @@ def VS():
     
 def timer():
     global num_guess , num_secret , num_remain , num_range1 ,num_range2 , list_num
+#    num_secret = random.randint(num_range1, num_range2) 
+#    num_guess = num_range1
     num_guess = (num_range1 + num_range2)/2
     if num_guess == num_secret:
                 print u"ai猜的数字是",num_guess,"，猜对了！\n"
                 list2.append(u"ai猜的数字是"+str(num_guess)+"，猜对了！\n")
                 timer.stop()
+    elif num_guess == num_range1:
+                print u"您猜的数字是",str(num_guess),"，猜小了！\n"
+                list1.append(u"您猜的数字是"+str(num_guess)+"，猜小了！\n")
+                num_range1 += 1
+                print u"请在",num_range1,u"到",num_range2,"之间继续猜。\n"
+    elif num_guess == num_range2:
+                print u"您猜的数字是",str(num_guess),"，猜大了！\n"
+                list1.append(u"您猜的数字是"+str(num_guess)+"，猜大了！\n")
+                num_range2 -= 1
+                print u"请在",num_range1,u"到",num_range2,"之间继续猜。\n"              
     elif num_range1 < num_guess < num_secret:
                 print u"ai猜的数字是",num_guess,"，猜小了！\n"
                 list2.append(u"ai猜的数字是"+str(num_guess)+"，猜小了！\n")
-                num_range1 = num_guess
+                num_range1 = num_guess + 1
                 print u"请在",num_range1,u"到",num_range2,"之间继续猜。\n"
     elif num_secret < num_guess < num_range2:
                 print u"ai猜的数字是",num_guess,"，猜大了！\n"
                 list2.append(u"ai猜的数字是"+str(num_guess)+"，猜大了！\n")
-                num_range2 = num_guess
+                num_range2 = num_guess - 1
                 print u"请在",num_range1,u"到",num_range2,"之间继续猜。\n"
     elif num_guess < num_range1 or num_guess > num_range2:     
                 print u"ai猜的数字是",num_guess,"，超出区间！\n"
@@ -170,6 +205,7 @@ timer = simplegui.create_timer(1000, timer)
 # register event handlers for control elements and start frame
 f.add_input("猜数区间下限，请填入不小于0的数字：\n",num_range1, 200)
 f.add_input("猜数区间上限，请填入大于下限的数字：\n",num_range2, 200)
+
 
 #f.add_button("猜数区间\n [0,100 )",range100, 200)
 #f.add_button("猜数区间\n [0,1000 )",range1000, 200)
