@@ -45,9 +45,7 @@ class WDot:
         
     def draw(self, canvas):
         for w in self.dots:
-            print w
-            #color_string = self.color.make_html()
-            #[(214, 79), 21.0, 1, 'rgb(150, 143, 189)', 'rgb(150, 143, 189)']
+            #print w
             canvas.draw_circle(w[0]
                     , w[1]
                     , 1
@@ -57,6 +55,7 @@ class WDot:
         
     def _gen_dots(self):
         for d in range(self.life):
+            #print d
             self.color.brighten()
             color_string = self.color.make_html()
             self.dots.append([self.pos
@@ -64,8 +63,8 @@ class WDot:
                        , 1
                        , color_string, color_string
                  ])
-            self.dots.reverse()
-        for i in self.dots : print i
+        self.dots.reverse() #位置很重要
+        #for i in self.dots : print i
     
     def update(self):
         self.life -= 1
@@ -88,7 +87,7 @@ def click(pos):
     print new_color
     print "HTML color is " + new_color.make_html()
     print
-    WDOTS.append(WDot(pos, new_color, 7, 42))
+    WDOTS.append(WDot(pos, new_color, 7, 150))
 # Frame
 
 frame = simplegui.create_frame("Fading Dots", canvas_width, canvas_height) 
