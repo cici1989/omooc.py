@@ -4,7 +4,7 @@ import random
 
 canvas_width = 300
 canvas_height = 300
-dots = []
+#dots = []
 WDOTS = []
 
 
@@ -66,10 +66,10 @@ class WDot:
         self.dots.reverse() #位置很重要
         #for i in self.dots : print i
     
-    def update(self):
-        self.life -= 1
-        self.color.brighten()
-        self.radius += 0.1
+#    def update(self):
+#        self.life -= 1
+#        self.color.brighten()
+#        self.radius += 0.1
 
     def get_life(self):
         return self.life
